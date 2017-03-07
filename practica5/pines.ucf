@@ -1,0 +1,54 @@
+# Fichero de pines
+# Eliminar almohadilla de aquellos pines que se quieran activar + asignar señal de la entity correspondiente
+
+	#salida del oscilador a 100MHz
+NET clk LOC=T9;
+
+	#switches placa extendida
+NET inicio LOC=P12;
+#NET SW<2> LOC=J1;
+#NET SW<3> LOC=H1;
+#NET SW<4> LOC=H3;
+#NET SW<5> LOC=G2;
+#NET SW<6> LOC=K15;
+#NET SW<7> LOC=K16;
+NET reset LOC=F15;
+
+	#push buttons placa superior
+NET jugar LOC=E11; 
+NET plantarse LOC=A13; 
+
+	#barra de leds placa extendida
+NET puntos<0> LOC=L5;
+NET puntos<1> LOC=N2;
+NET puntos<2> LOC=M3;
+NET puntos<3> LOC=N1;
+NET puntos<4> LOC=T13;
+NET puntos<5> LOC=L15;
+#NET leds<6> LOC=J13;
+#NET leds<7> LOC=H15;
+#NET leds<8> LOC=J16;
+NET pierdo LOC=J14;
+
+#Display 7-segmentos 
+#
+#			   S0
+#			   ---
+#	    S5	|	|s1
+#			    S6
+#			   ---
+#	    S4	|	|S2
+#	
+#			   ---
+#			   S3
+
+
+	#Display 7-segmentos de la parte derecha de la placa extendida
+NET ult_carta<0> loc=E2;
+NET ult_carta<1> loc=E1;
+NET ult_carta<2> loc=F3;
+NET ult_carta<3> loc=F2;
+NET ult_carta<4> loc=G4;
+NET ult_carta<5> loc=G3;
+NET ult_carta<6> loc=G1;
+
